@@ -19,9 +19,9 @@ const ZH = {
   heroTitle: "Metalion\n俱樂部 🎉",
   subtitle:
     "雄獅集團的 Web3 社群平台，以旅遊為核心。\n賦能食宿遊購行領域，打造華語旅遊 Web3 最佳社群",
-  connectWalletDesc: "gonna 兌換咖啡，\n活動已於8/5結束。\n \n新的優惠即將展開...",
+  connectWalletDesc: "gonna 兌換咖啡，\n活動已於8/5結束",
   discordDesc: "追蹤最新活動消息，\n請加入 Metalion Discord ",
-  travelshowDesc: "宙獅計劃Metalion，\n搶先註冊！",
+  travelshowDesc: "Metalion Lodging Pass \n（宙獅大旅社）", //"宙獅計劃Metalion，\n搶先註冊！",
   redeemTitle: "連接錢包查看活動 🎉\n加入 Discord 抽獎慶祝 🎁",
   hero2Title: "宙獅元宇宙開台慶\n6/6 活動正式開跑",
   cta2Ttile: "加入Discord 一同狂歡 🎉",
@@ -31,7 +31,7 @@ const ZH = {
   // btns text
   connectWalletTitle: "連接錢包",
   joinDiscordTitle: "加入 Discord",
-  travelshowVisitorTitle: "2022 Meet Taipei 按這裡，抽來回機票",
+  travelshowVisitorTitle: "領取 NFT", // "Metalion X Qubic",
   signWalletTitle: "簽署綁定",
   enterPortalTitle: "前往兌換中心",
 };
@@ -172,9 +172,11 @@ export default function ConnectWallet() {
             as={"a"}
             target="_blank"
             href="https://discord.gg/metalion"
+            // href="https://discord.gg/Muj6gwSX"
             rel="noreferrer"
             alignItems="center"
             justifyContent="center"
+            fontSize={{ base: "3xl",lg: "3xl" }}
             py={6}
             border="solid transparent"
             fontWeight="bold"
@@ -185,32 +187,34 @@ export default function ConnectWallet() {
               bg: "purple.700",
             }}
           >
+          
             {i18n.joinDiscordTitle}
           </Button>
           <Heading
             whiteSpace={{ base: "pre-wrap" }}
             fontSize={{ base: "4xl", lg: "4xl" }}
           >
-            {i18n.travelshowDesc}
+          {i18n.travelshowDesc}
           </Heading>
           <Button
             // leftIcon={<FaDiscord />}
             w="full"
             as={"a"}
             target="_blank"
-            href="https://forms.gle/XLJXEKZUGyj48Xi17"
+            href= "https://liontravel.qubic.market/products/147092"  
+            //"https://forms.gle/XLJXEKZUGyj48Xi17"
             rel="noreferrer"
             alignItems="center"
             justifyContent="center"
-            fontSize={{ base: "md", lg: "xl" }}
+            fontSize={{ base: "4xl", lg: "4xl" }}
             py={10}
             border="solid transparent"
             fontWeight="bold"
             rounded="lg"
             color="white"
-            bg="yellow.400"
+            bg="black.000"
             _hover={{
-              bg: "yellow.300",
+              bg: "green.400",
             }}
           >
             {i18n.travelshowVisitorTitle}
