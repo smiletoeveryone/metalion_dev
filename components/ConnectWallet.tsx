@@ -106,7 +106,7 @@ export default function ConnectWallet() {
                   color={"white"}
                   bg={"red.700"}
                   _hover={{
-                    bg: "yellow.400",
+                    bg: "yellow.300",
                   }}
                 >
                   {i18n.enterPortalTitle}
