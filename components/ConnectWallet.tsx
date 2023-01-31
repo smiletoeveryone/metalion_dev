@@ -19,7 +19,7 @@ const ZH = {
   heroTitle: "Metalion\n俱樂部 🎉",
   subtitle:
     "雄獅集團的 Web3 社群平台，以旅遊為核心。\n賦能食宿遊購行領域，打造華語旅遊 Web3 最佳社群",
-  connectWalletDesc: "gonna 兌換咖啡，\n活動已於8/5結束",
+  connectWalletDesc: "gonna 兌換咖啡，\n活動已於8/5結束! \n\n更多的優惠活動將持續推出...",
   discordDesc: "追蹤最新活動消息，\n請加入 Metalion Discord ",
   travelshowDesc: "Metalion Lodging Pass \n（宙獅大旅社）", //"宙獅計劃Metalion，\n搶先註冊！",
   redeemTitle: "連接錢包查看活動 🎉\n加入 Discord 抽獎慶祝 🎁",
