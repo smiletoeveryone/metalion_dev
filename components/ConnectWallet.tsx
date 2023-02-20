@@ -100,7 +100,7 @@ export default function ConnectWallet() {
           <Box>
             {isAuth ? (
               <NextLink passHref href="">
-              
+              {/*
               <Button
                   w="full"
                   as={"a"}
@@ -120,6 +120,7 @@ export default function ConnectWallet() {
                 >
                   {i18n.enterPortalTitle}
                 </Button>
+                */}
                 
               
                 </NextLink>
