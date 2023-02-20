@@ -140,7 +140,7 @@ export default function ConnectWallet() {
                     bg: "", //yellow.400
                   }}
                 >
-                  {i18n.enterPortalTitle}
+                  {/*i18n.enterPortalTitle*/}
                 </Button>
                 
                 
