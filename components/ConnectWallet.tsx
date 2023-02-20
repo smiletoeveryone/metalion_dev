@@ -98,49 +98,7 @@ export default function ConnectWallet() {
           >
             {i18n.connectWalletDesc}
           </Heading>
-          <Box>
-            {isAuth ? (
-              <NextLink passHref href="/tokens">
-                <Button
-                  w="full"
-                  display="inline-flex"
-                  alignItems="center"
-                  justifyContent="center"
-                  py={6}
-                  border="solid transparent"
-                  fontWeight="bold"
-                  rounded="lg"
-                  color={"white"}
-                  bg={"red.700"}
-                  _hover={{
-                    bg: "yellow.300",
-                  }}
-                >
-                  {i18n.enterPortalTitle}
-                </Button>
-              </NextLink>
-            ) : (
-              <Button
-                w={{ base: "full" }}
-                leftIcon={<MdOutlineAccountBalanceWallet />}
-                alignItems="center"
-                justifyContent="center"
-                py={6}
-                border="solid transparent"
-                fontWeight="bold"
-                rounded="lg"
-                color="white"
-                bg={"red.600"}
-                _hover={{
-                  bg: "red.700",
-                }}
-                // TODO Check connect type
-                onClick={connect as () => Promise<void>}
-              >
-                {i18n.connectWalletTitle}
-              </Button>
-            )}
-
+          
             <NextLink passHref href="/redeem-check">
               <Button
                 mt={5}
