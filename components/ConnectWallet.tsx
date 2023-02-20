@@ -83,7 +83,7 @@ export default function ConnectWallet() {
           maxWidth={{ base: "full", lg: "md" }}
           alignItems={{ base: "left", lg: "center" }}
           flex="1"
-          spacing={100}
+          spacing={10}
         >
           <Heading
             whiteSpace={{ base: "pre-wrap" }}
@@ -94,7 +94,6 @@ export default function ConnectWallet() {
           <Box>
             {isAuth ? (
               <NextLink passHref href="/tokens">
-              
                 <Button
                   w="full"
                   display="inline-flex"
@@ -107,7 +106,7 @@ export default function ConnectWallet() {
                   color={"white"}
                   bg={"red.700"}
                   _hover={{
-                    bg: "yellow.400",
+                    bg: "yellow.300",
                   }}
                 >
                   {i18n.enterPortalTitle}
@@ -131,14 +130,9 @@ export default function ConnectWallet() {
                 // TODO Check connect type
                 onClick={connect as () => Promise<void>}
               >
-              
-              
                 {i18n.connectWalletTitle}
               </Button>
-                               
-                          )}
-            
-            
+            )}
 
             <NextLink passHref href="/redeem-check">
               <Button
