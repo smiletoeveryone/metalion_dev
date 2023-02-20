@@ -206,9 +206,7 @@ export default function ConnectWallet() {
                 }}
                 // TODO Check connect type
                 onClick={connect as () => Promise<void>}
-                
-                              >
-                            
+                >
                 {i18n.connectWalletTitle_asiayo}
               </Button>
               )}
