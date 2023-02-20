@@ -20,7 +20,7 @@ const ZH = {
   subtitle:
     "雄獅集團的 Web3 社群平台，以旅遊為核心。\n賦能食宿遊購行領域，打造華語旅遊 Web3 最佳社群",
   // connectWalletDesc: "gonna 兌換咖啡，\n活動已於8/5結束! \n\n更多的優惠活動將持續推出...",
-  connectWalletDesc: "😋️😋️😋️AsiaYo 特色旅宿\n\n 海內外特色旅宿/主題民宿 \n無上限最高6.5%現金回饋 (註.1)\n#包棟 #秘境 #好友出遊\n\nAsia Yo的訂房優惠即將展開 ，\n立即連結您的錢包，\n會出現專屬的折扣連結喔👍️👍️👍️",
+  connectWalletDesc_asiayo: "😋️😋️😋️AsiaYo 特色旅宿\n\n 海內外特色旅宿/主題民宿 \n無上限最高6.5%現金回饋 (註.1)\n#包棟 #秘境 #好友出遊\n\nAsia Yo的訂房優惠即將展開 ，\n立即連結您的錢包，\n會出現專屬的折扣連結喔👍️👍️👍️",
   discordDesc: "追蹤最新活動消息，\n請加入 Metalion Discord ",
   // travelshowDesc: "Metalion Lodging Pass \n（宙獅大旅社）", //"宙獅計劃Metalion，\n搶先註冊！",
   travelshowDesc: "😋️😋️😋️宙獅精選飯店\n\n海內外精選星級飯店\n無上限最高6.5%現金回饋 (註.1)\n即時房源，即訂即住.👍️👍️👍️", //"宙獅計劃Metalion，\n搶先註冊！",
@@ -123,7 +123,25 @@ export default function ConnectWallet() {
             {isAuth ? (
               <NextLink passHref href="">
               
-              
+              <Button
+                  w="full"
+                  as={"a"}
+                  target="_blank"
+                  display="inline-flex"
+                  alignItems="center"
+                  justifyContent="center"
+                  py={6}
+                  border="solid transparent"
+                  fontWeight="bold"
+                  rounded="lg"
+                  color={"white"}
+                  bg={""} //red.700
+                  _hover={{
+                    bg: "", //yellow.400
+                  }}
+                >
+                  {i18n.enterPortalTitle}
+                </Button>
                 
                 
               
@@ -205,8 +223,10 @@ export default function ConnectWallet() {
                   bg: "", //blue.700
                 }}
                 // TODO Check connect type
-                onClick={connect as () => Promise<void>}
-                >
+                // onClick={connect as () => Promise<void>}
+                
+                              >
+                            
                 {i18n.connectWalletTitle_asiayo}
               </Button>
               )}
