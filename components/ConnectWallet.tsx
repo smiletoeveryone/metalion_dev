@@ -110,7 +110,7 @@ export default function ConnectWallet() {
             fontSize={{ base: "2xl", lg: "2xl" }}
           >
           
-            {i18n.connectWalletDesc}
+            {i18n.connectWalletDesc_asiayo}
           </Heading>
           
           
