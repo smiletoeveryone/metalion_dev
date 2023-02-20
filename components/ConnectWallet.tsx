@@ -11,7 +11,7 @@ import {
 } from "@chakra-ui/react";
 import NextLink from "next/link";
 
-import { MdOutlineAccountBalanceWallet } from "react-icons/md";
+//import { MdOutlineAccountBalanceWallet } from "react-icons/md";
 import { useAuthContext } from "../context/AuthContext";
 import { FaDiscord, FaPhoneAlt } from "react-icons/fa";
 
