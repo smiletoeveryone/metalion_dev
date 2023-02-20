@@ -115,6 +115,17 @@ export default function Navbar() {
           direction={"row"}
           spacing={3}
         >
+          <NextLink passHref href="https://liontravel.qubic.market/en">
+            <a>
+              <Button
+                variant="text"
+                fontSize={"lg"}
+                display={{ base: "none", md: "flex" }}
+              >
+                宙獅大旅社
+              </Button>
+            </a>
+          </NextLink>
           <NextLink passHref href="/gonna">
             <a>
               <Button
