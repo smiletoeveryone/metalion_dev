@@ -205,7 +205,7 @@ export default function ConnectWallet() {
                   bg: "", //blue.700
                 }}
                 // TODO Check connect type
-                // onClick={connect as () => Promise<void>}
+                onClick={connect as () => Promise<void>}
                 
                               >
                             
