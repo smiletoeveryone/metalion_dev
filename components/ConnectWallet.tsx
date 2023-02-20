@@ -26,7 +26,6 @@ const ZH = {
   hero2Title: "宙獅元宇宙開台慶\n6/6 活動正式開跑",
   cta2Ttile: "加入Discord 一同狂歡 🎉",
   checkRedeemBtn: "甜點兌換查詢",
-  checkRedeemBtn_asiayo: "😍️😍️😍️ click here for visiting AsiaYo! 💝️💝️💝️",
   pleaseSignTitle: "錢包連結成功，請於錢包進行簽署完成登入",
   loginSuccessfulTitle: "登入成功",
   // btns text
@@ -35,7 +34,6 @@ const ZH = {
   travelshowVisitorTitle: "領取 NFT", // "Metalion X Qubic",
   signWalletTitle: "簽署綁定",
   enterPortalTitle: "前往兌換中心",
-  enterPortalTitle_asiayo: "😍️😍️😍️ click here for visiting AsiaYo! 💝️💝️💝️",
 };
 
 export default function ConnectWallet() {
@@ -85,7 +83,7 @@ export default function ConnectWallet() {
           maxWidth={{ base: "full", lg: "md" }}
           alignItems={{ base: "left", lg: "center" }}
           flex="1"
-          spacing={100}
+          spacing={10}
         >
           <Heading
             whiteSpace={{ base: "pre-wrap" }}
@@ -96,11 +94,8 @@ export default function ConnectWallet() {
           <Box>
             {isAuth ? (
               <NextLink passHref href="/tokens">
-              
                 <Button
                   w="full"
-                  as={"a"}
-                  target="_blank"
                   display="inline-flex"
                   alignItems="center"
                   justifyContent="center"
@@ -111,7 +106,7 @@ export default function ConnectWallet() {
                   color={"white"}
                   bg={"red.700"}
                   _hover={{
-                    bg: "yellow.400",
+                    bg: "yellow.300",
                   }}
                 >
                   {i18n.enterPortalTitle}
@@ -135,14 +130,9 @@ export default function ConnectWallet() {
                 // TODO Check connect type
                 onClick={connect as () => Promise<void>}
               >
-              
-              
                 {i18n.connectWalletTitle}
               </Button>
-                               
-                          )}
-            
-            
+            )}
 
             <NextLink passHref href="/redeem-check">
               <Button
@@ -160,30 +150,6 @@ export default function ConnectWallet() {
                 colorScheme="gray"
               >
                 {i18n.checkRedeemBtn}
-                </Button>
-                </NextLink>
-              
-              
-              <NextLink passHref href="https://asiayo.com/zh-tw/?aff_id=271">
-                                                                 
-              <Button
-                mt={5}
-                w={{ base: "full" }}
-                as={"a"}
-                target="_blank"
-                display="inline-flex"
-                alignItems="center"
-                justifyContent="center"
-                fontSize={{ base: "3xl",lg: "3xl" }}
-                py={6}
-                border="solid transparent"
-                fontWeight="bold"
-                rounded="lg"
-                color={"gray.600"}
-                bg={"yellow"}
-                colorScheme="gray"
-              >
-                {i18n.checkRedeemBtn_asiayo}
               </Button>
             </NextLink>
           </Box>
