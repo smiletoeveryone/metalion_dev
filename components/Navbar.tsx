@@ -256,6 +256,18 @@ export default function Navbar() {
                     color: "white",
                   }}
                 >
+                <NextLink passHref href="https://liontravel.qubic.market/en">
+                    <a>宙獅大旅社</a>
+                  </NextLink>
+                </MenuItem>
+                
+                <MenuItem
+                  fontSize="xl"
+                  _hover={{
+                    bg: "brand.400",
+                    color: "white",
+                  }}
+                >
                   <NextLink passHref href="/gonna">
                     <a>gonna</a>
                   </NextLink>
