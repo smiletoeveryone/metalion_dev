@@ -308,7 +308,7 @@ export default function ConnectWallet() {
             mt={5}
             w={{ base: "full" }}
             leftIcon={<FaDiscord />}
-            w="full"
+            //w="full"
             as={"a"}
             target="_blank"
             href="https://discord.gg/metalion"
