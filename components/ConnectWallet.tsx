@@ -227,7 +227,7 @@ export default function ConnectWallet() {
                 
                               >
                             
-                {i18n.connectWalletTitle_asiayo}
+                {i18n.enterPortalTitle_asiayo}
               </Button>
               )}
             
