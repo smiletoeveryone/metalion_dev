@@ -256,8 +256,20 @@ export default function Navbar() {
                     color: "white",
                   }}
                 >
-                <NextLink passHref href="https://liontravel.qubic.market/en">
-                    <a>宙獅大旅社</a>
+                <NextLink passHref href="https://devtest.metalion.world/">
+                    <a>
+              <Button
+                as={"a"}
+                target="_blank"
+                href="https://devtest.metalion.world/"
+                rel="noreferrer"
+                variant="text"
+                fontSize={"lg"}
+                display={{ base: "none", md: "flex" }}
+              >
+                宙獅大旅社
+              </Button>
+            </a>
                   </NextLink>
                 </MenuItem>
                 
