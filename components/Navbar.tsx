@@ -124,7 +124,7 @@ export default function Navbar() {
                 rel="noreferrer"
                 variant="text"
                 fontSize={"lg"}
-                display={{ base: "none", md: "flex" }}
+                display={{ base: "flex", md: "flex" }}
               >
                 宙獅大旅社
               </Button>
@@ -269,7 +269,7 @@ export default function Navbar() {
                 rel="noreferrer"
                 variant="text"
                 fontSize={"lg"}
-                display={{ base: "none", md: "flex" }}
+                display={{ base: "flex", md: "flex" }}
               >
                 宙獅大旅社
               </Button>
