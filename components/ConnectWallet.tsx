@@ -43,7 +43,7 @@ const ZH = {
 };
 
 export default function ConnectWallet() {
-  const { connect, isAuth } = useAuthContext();
+  const { isAuth } = useAuthContext();
 
   const i18n = ZH;
 
