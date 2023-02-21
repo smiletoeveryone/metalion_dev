@@ -24,9 +24,9 @@ const ZH = {
   discordDesc: "追蹤最新活動消息，\n請加入 Metalion Discord ",
   // travelshowDesc: "Metalion Lodging Pass \n（宙獅大旅社）", //"宙獅計劃Metalion，\n搶先註冊！",
   travelshowDesc: "😋️😋️😋️宙獅精選飯店\n\n海內外精選星級飯店\n無上限最高6.5%現金回饋 (註.1)\n即時房源，即訂即住.👍️👍️👍️", //"宙獅計劃Metalion，\n搶先註冊！",
-  redeemTitle: "連接錢包查看活動 🎉\n加入 Discord 抽獎慶祝 🎁",
-  hero2Title: "宙獅元宇宙開台慶\n6/6 活動正式開跑",
-  cta2Ttile: "加入Discord 一同狂歡 🎉",
+  //redeemTitle: "連接錢包查看活動 🎉\n加入 Discord 抽獎慶祝 🎁",
+  //hero2Title: "宙獅元宇宙開台慶\n6/6 活動正式開跑",
+  //cta2Ttile: "加入Discord 一同狂歡 🎉",
   // checkRedeemBtn: "甜點兌換查詢",
   // connectWalletTitle_asiayo: "😍️😍️😍️ click here for visiting AsiaYo! 💝️💝️💝️",
   pleaseSignTitle: "錢包連結成功，請於錢包進行簽署完成登入",
@@ -34,8 +34,8 @@ const ZH = {
   // btns text
   connectWalletTitle: "連接錢包",
   joinDiscordTitle: "加入 Discord",
-  travelshowVisitorTitle: "登入宙獅大旅社", // "Metalion X Qubic",
-  signWalletTitle: "簽署綁定",
+  qubicVisitorTitle: "登入宙獅大旅社", // "Metalion X Qubic",
+  //signWalletTitle: "簽署綁定",
   //enterPortalTitle: "前往兌換中心",
   enterPortalTitle_asiayo: "😍️😍️😍️ 按這裏訪問Asia Yo取得您的專屬折扣❗️ 💝️💝️💝️",
   checkRedeemBtn_qubic: "登入/註冊 Qubic 錢包❗️❗️❗️", 
@@ -120,7 +120,7 @@ export default function ConnectWallet() {
           
           
           <Box>
-            {isAuth ? (
+            {/*isAuth ? (
               <NextLink passHref href="">
               
               <Button
@@ -173,7 +173,7 @@ export default function ConnectWallet() {
                             
                 {i18n.connectWalletTitle}
               </Button>
-              )}
+              )*/}
               
               {isAuth ? (
               <NextLink passHref href="https://asiayo.com/zh-tw/?aff_id=537"> 
@@ -296,7 +296,7 @@ export default function ConnectWallet() {
               bg: "green.400",
             }}
           >
-            {i18n.travelshowVisitorTitle}
+            {i18n.qubicVisitorTitle}
           </Button>
           <Heading
             whiteSpace={{ base: "pre-wrap" }}
