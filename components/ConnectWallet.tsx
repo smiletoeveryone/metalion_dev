@@ -276,7 +276,7 @@ export default function ConnectWallet() {
             w={{ base: "full" }}
             mt={15}
             // leftIcon={<FaDiscord />}
-            w="full"
+            //w="full"
             as={"a"}
             target="_blank"
             href= "https://liontravel.qubic.market/"
