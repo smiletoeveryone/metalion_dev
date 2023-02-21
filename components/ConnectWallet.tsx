@@ -276,7 +276,7 @@ export default function ConnectWallet() {
             w={{ base: "full" }}
             mt={15}
             // leftIcon={<FaDiscord />}
-            w="full"
+            // w="full"
             as={"a"}
             target="_blank"
             href= "https://liontravel.qubic.market/"
@@ -308,7 +308,7 @@ export default function ConnectWallet() {
             mt={5}
             w={{ base: "full" }}
             leftIcon={<FaDiscord />}
-            w="full"
+            // w="full"
             as={"a"}
             target="_blank"
             href="https://discord.gg/metalion"
@@ -362,7 +362,7 @@ export default function ConnectWallet() {
     <Flex
       p={{ base: "30px", md: 50 }}
       minH={"xl"}
-      w="full"
+      // w="full"
       alignItems="center"
       justifyContent="center"
     >
