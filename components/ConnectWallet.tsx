@@ -44,7 +44,7 @@ const ZH = {
   metalion_lodging:"Metalion Lodging Pass\n宙獅大旅社",
   liontravelTitle:"宙獅精選飯店",
   liontravel:"",
-  auth_noteTitle:"身份驗證 啓用訂房"
+  auth_noteTitle:"請點選右上方[連結錢包]按鈕，以取得優惠權利❗️"
 };
 
 export default function ConnectWallet() {
@@ -99,7 +99,7 @@ export default function ConnectWallet() {
         
             
         
-        {/*<Button
+        {<Button
             mt={5}
             w={{ base: "80" }}
             //leftIcon={< />}
@@ -124,7 +124,7 @@ export default function ConnectWallet() {
           >
           
             {i18n.auth_noteTitle}
-          </Button>*/}
+          </Button>}
       </chakra.span>  
       
       
