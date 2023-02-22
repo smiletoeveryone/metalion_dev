@@ -352,7 +352,8 @@ export default function ConnectWallet() {
             // w="full"
             as={"a"}
             target="_blank"
-            href="https://www.liontravel.com/category/zh-tw/index"            
+            href=""
+            //https://www.liontravel.com/category/zh-tw/index
             rel="noreferrer"
             alignItems="center"
             justifyContent="center"
