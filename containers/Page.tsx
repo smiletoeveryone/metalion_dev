@@ -45,7 +45,7 @@ const Page = ({ children, pageRoute }: PageProps) => {
               margin={"0 auto"}
             >
               <chakra.span fontWeight="semibold">
-                注意：你目前在不對的區塊鏈網絡！請於錢包轉換區塊鏈網絡到 Polygon 並重新登入!
+                您已成功連結錢包❗️❗️❗️😀️😀️😀️
               </chakra.span>
               {/*`請於錢包轉換區塊鏈網絡到 ${rightNetworkText} 並重新登入`*/}
             </AlertDescription>
