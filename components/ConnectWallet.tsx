@@ -412,7 +412,7 @@ export default function ConnectWallet() {
             {i18n.metalion_lodging}
           </Heading>
           <Button
-            w={{ base: "full" }}
+            w={{ base: "80" }}
             mt={15}
             // leftIcon={<FaDiscord />}
             // w="full"
