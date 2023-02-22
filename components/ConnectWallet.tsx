@@ -106,7 +106,7 @@ export default function ConnectWallet() {
             // w="full"
             as={"a"}
             target="_blank"
-            href="/tokens"
+            // href="/tokens"
             // href="https://discord.gg/Muj6gwSX"
             rel="noreferrer"
             alignItems="center"
