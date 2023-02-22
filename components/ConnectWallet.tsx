@@ -119,7 +119,7 @@ export default function ConnectWallet() {
             color="white"
             bg="black"
             _hover={{
-              bg: "yellow.400",
+              bg: "black",
             }}
           >
           
