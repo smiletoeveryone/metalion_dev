@@ -11,7 +11,7 @@ import {
 } from "@chakra-ui/react";
 import NextLink from "next/link";
 
-//import { MdOutlineAccountBalanceWallet } from "react-icons/md";
+import { MdOutlineAccountBalanceWallet } from "react-icons/md";
 import { useAuthContext } from "../context/AuthContext";
 import { FaDiscord, FaPhoneAlt } from "react-icons/fa";
 
@@ -95,7 +95,9 @@ export default function ConnectWallet() {
         color="white"
         mb={6}
       >
-        {i18n.subtitle}
+        {i18n.subtitle}   
+        
+            
         
         {/*<Button
             mt={5}
@@ -123,11 +125,10 @@ export default function ConnectWallet() {
           
             {i18n.auth_noteTitle}
           </Button>*/}
-      </chakra.span>
+      </chakra.span>  
       
       
-      
-     
+              
       <Stack
         pt={{ base: "10px", lg: "50px" }}
         direction={{ base: "column", lg: "row" }}
@@ -259,7 +260,7 @@ export default function ConnectWallet() {
                   bg: "", //blue.700
                 }}
                 // TODO Check connect type
-                // onClick={connect as () => Promise<void>}
+                //onClick={connect as () => Promise<void>}
                 
                               >
                             
@@ -345,32 +346,65 @@ export default function ConnectWallet() {
             {i18n.liontravel}
           </Heading>
           
-          <Button
-            mt={5}
-            w={{ base: "80" }}
-            //leftIcon={<FaDiscord />}
-            // w="full"
-            as={"a"}
-            target="_blank"
-            href=""
-            //https://www.liontravel.com/category/zh-tw/index
-            rel="noreferrer"
-            alignItems="center"
-            justifyContent="center"
-            fontSize={{ base: "24px",lg: "20px" }}
-            py={6}
-            border="solid transparent"
-            fontWeight="bold"
-            rounded="lg"
-            color="white"
-            bg="gray.600"
-            _hover={{
-              bg: "gray.700",
-            }}
-          >
+          {isAuth ? (
+              <NextLink passHref href="">
+              
+              <Button
+                  mt={1}
+                  w="330px"
+                  as={"a"}
+                  target="_blank"
+                  display="inline-flex"
+                  alignItems="center"
+                  justifyContent="center"
+                  fontSize={{ base: "18",lg: "24px" }}
+                  py={6}
+                  border="solid transparent"
+                  fontWeight="bold"
+                  rounded="lg"
+                  color={"white"}
+                  bg={"gray.500"}
+                  _hover={{
+                    bg: "gray.400",
+                  }}
+                >
+                  {i18n.liontravelTitle}
+                </Button>
+                
+              
+                </NextLink>
+              
+               ):
+               
+               (
+              <Button
+                mt={5}
+                w={{ base: "full" }}
+                //leftIcon={<MdOutlineAccountBalanceWallet />}
+                alignItems="center"
+                justifyContent="center"
+                fontSize={{ base: "3xl",lg: "10px" }}
+                py={6} //default=6
+                border="solid transparent"
+                fontWeight="bold"
+                rounded="lg"
+                color="white"
+                bg={""} //blue.600
+                _hover={{
+                  bg: "", //blue.700
+                }}
+                // TODO Check connect type
+                //onClick={connect as () => Promise<void>}
+                
+                              >
+                            
+                {i18n.connectWalletDesc_asiayo_empty}
+              </Button>
+              
+              )}
+              
           
-            {i18n.liontravelTitle}
-          </Button>
+          
           <Heading
             whiteSpace={{ base: "pre-wrap" }}
             fontSize={{ base: "20x", lg: "20px" }}
