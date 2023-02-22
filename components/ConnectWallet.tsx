@@ -101,7 +101,7 @@ export default function ConnectWallet() {
         
         {<Button
             mt={5}
-            w={{ base: "80" }}
+            w={{ base: "100" }}
             //leftIcon={< />}
             // w="full"
             as={"a"}
