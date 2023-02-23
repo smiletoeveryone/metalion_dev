@@ -169,7 +169,7 @@ export default function ConnectWallet() {
                 // TODO Check connect type
                 onClick={connect as () => Promise<void>}
               >
-                驗證身份, 啓用訂房
+                {i18n.connectWalletTitle}
               </Button>
             )}
             
