@@ -23,7 +23,7 @@ export default function Footer() {
         bg="gray.900"
       >
         <Stack direction={["column", "row"]} spacing="20px">
-          <chakra.img h="40px" src="/mithras-logo.png"></chakra.img>
+          
           <chakra.img
             h="40px"
             src="/gp-logo.png"
