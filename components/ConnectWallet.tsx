@@ -121,12 +121,6 @@ export default function ConnectWallet() {
             {i18n.connectWalletDesc}
           </Heading>
           
-          <Heading
-            whiteSpace={{ base: "pre-wrap" }}
-            fontSize={{ base: "3xl", lg: "4xl" }}
-          >
-            {i18n.newPromotion}
-          </Heading>
           
           <Box>
             {isAuth ? (
