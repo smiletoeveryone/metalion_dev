@@ -34,6 +34,7 @@ const ZH = {
   loginSuccessfulTitle: "登入成功",
   // btns text
   connectWalletTitle: "驗證身份, 啓用訂房",
+  connectWalletTitle_connected: "錢包已連結",
   joinDiscordTitle: "加入 Discord",
   qubicVisitorTitle: "領取 NFT", // "Metalion X Qubic",
   //signWalletTitle: "簽署綁定",
@@ -130,6 +131,7 @@ export default function ConnectWallet() {
                   leftIcon={<MdOutlineAccountBalanceWallet />}
                   display="inline-flex"
                   alignItems="center"
+                  left="190px"
                   justifyContent="center"
                   py={6}
                   border="solid transparent"
@@ -141,7 +143,7 @@ export default function ConnectWallet() {
                     bg: "black",
                   }}
                 >
-                  {i18n.connectWalletTitle}
+                  {i18n.connectWalletTitle_connected}
                 </Button>
               </NextLink>
             ) : (
