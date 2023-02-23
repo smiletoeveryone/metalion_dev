@@ -154,8 +154,8 @@ export default function ConnectWallet() {
                 leftIcon={<MdOutlineAccountBalanceWallet />}
                 display="inline-flex"
                 fontSize={{ base: "14px",lg: "24px" }}
-                alignItems="center"
-                left="190px"
+                //alignItems="center"
+                //left="190px"
                 justifyContent="center"
                 py={6}
                 border="solid transparent"
