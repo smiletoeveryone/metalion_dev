@@ -156,6 +156,7 @@ export default function ConnectWallet() {
                 fontSize={{ base: "14px",lg: "24px" }}
                 //alignItems="center"
                 //left="190px"
+                right="-190px"
                 justifyContent="center"
                 py={6}
                 border="solid transparent"
