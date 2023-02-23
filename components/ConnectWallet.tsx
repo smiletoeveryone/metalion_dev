@@ -504,7 +504,7 @@ export default function ConnectWallet() {
             color="black"
             bg="white"
             _hover={{
-              bg: "green.400",
+              bg: "gray",
             }}
           >
             {i18n.qubicVisitorTitle}
