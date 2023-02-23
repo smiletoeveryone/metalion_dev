@@ -500,7 +500,7 @@ export default function ConnectWallet() {
             rel="noreferrer"
             alignItems="center"
             justifyContent="center"
-            fontSize={{ base: "4xl", lg: "24px" }}
+            fontSize={{ base: "2xl", lg: "24px" }}
             py={6}
             border="solid transparent"
             fontWeight="bold"            
