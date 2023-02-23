@@ -43,7 +43,7 @@ const ZH = {
   noteDesc:"註:\n\n1. 宙獅大旅社NFT訂房使用期限為2023/12/31止.住房需於2024/12/31前入住完畢.\n2. 需透過宙獅大旅社網頁專屬連結至訂房網站. (重要)\n3. 入住完成後30天內於宙獅Discord提供收款帳號即可獲得現金回饋",
   connectWalletDesc_asiayo_empty:"",
   metalion_lodging:"Metalion Lodging Pass\n宙獅大旅社",
-  liontravelTitle:"宙獅精選飯店",
+  liontravelTitle:"宙獅精選飯店 coming soon❗️",
   liontravel:"",
   auth_noteTitle:"請點選右上方[連結錢包]按鈕，以取得優惠權利❗️"
 };
