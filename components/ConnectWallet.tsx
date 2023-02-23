@@ -104,12 +104,7 @@ export default function ConnectWallet() {
           flex="1"
           spacing={10}
         >
-          <Heading
-            whiteSpace={{ base: "pre-wrap" }}
-            fontSize={{ base: "2xl", lg: "3xl" }}
-          >
-            {i18n.connectWalletDesc}
-          </Heading>
+          
           
           <Heading
             whiteSpace={{ base: "pre-wrap" }}
