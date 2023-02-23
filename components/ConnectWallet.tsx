@@ -127,7 +127,8 @@ export default function ConnectWallet() {
             {isAuth ? (
               <NextLink passHref href="">
                 <Button
-                  w="full"
+                  w={{ base: "200px, lg:220px" }}
+                  //w="full"
                   leftIcon={<MdOutlineAccountBalanceWallet />}
                   display="inline-flex"
                   alignItems="center"
@@ -148,7 +149,8 @@ export default function ConnectWallet() {
               </NextLink>
             ) : (
               <Button
-                w={{ base: "440px" }}
+                w={{ base: "200px, lg:220px" }}
+                //w={{ base: "440px" }}
                 leftIcon={<MdOutlineAccountBalanceWallet />}
                 fontSize={{ base: "24px",lg: "24px" }}
                 alignItems="center"
