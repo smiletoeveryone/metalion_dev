@@ -110,7 +110,7 @@ export default function ConnectWallet() {
       </chakra.span>  
       
       <VStack
-          maxWidth={{ base: "full", lg: "md" }}
+          maxWidth={{ base: "200px", lg: "md" }}
           alignItems={{ base: "center", lg: "center" }}
           flex="1"
           spacing={10}
