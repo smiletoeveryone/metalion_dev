@@ -111,7 +111,7 @@ export default function ConnectWallet() {
       
       <VStack
           maxWidth={{ base: "full", lg: "md" }}
-          alignItems={{ base: "left", lg: "center" }}
+          alignItems={{ base: "center", lg: "center" }}
           flex="1"
           spacing={10}
         >
