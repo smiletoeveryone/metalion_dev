@@ -149,8 +149,8 @@ export default function ConnectWallet() {
               </NextLink>
             ) : (
               <Button
-                w={{ base: "50px, lg:220px" }}
-                //w={{ base: "440px" }}
+                //w={{ base: "50px, lg:220px" }}
+                w="150px"
                 leftIcon={<MdOutlineAccountBalanceWallet />}
                 display="inline-flex"
                 fontSize={{ base: "14px",lg: "24px" }}
