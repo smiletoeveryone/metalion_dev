@@ -124,9 +124,10 @@ export default function ConnectWallet() {
           
           <Box>
             {isAuth ? (
-              <NextLink passHref href="/tokens">
+              <NextLink passHref href="">
                 <Button
                   w="full"
+                  leftIcon={<MdOutlineAccountBalanceWallet />}
                   display="inline-flex"
                   alignItems="center"
                   justifyContent="center"
@@ -135,12 +136,12 @@ export default function ConnectWallet() {
                   fontWeight="bold"
                   rounded="lg"
                   color={"white"}
-                  bg={""}
+                  bg={"black"}
                   _hover={{
-                    bg: "",
+                    bg: "black",
                   }}
                 >
-                  {i18n.enterPortalTitle}
+                  {i18n.connectWalletTitle}
                 </Button>
               </NextLink>
             ) : (
