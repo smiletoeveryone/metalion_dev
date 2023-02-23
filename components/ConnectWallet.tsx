@@ -20,7 +20,7 @@ const ZH = {
   heroTitle: "Metalion Lodging Pass 宙獅大旅社 🎉",
   subtitle:
     "宙獅大旅社持有者將可享有，海內外訂房最低5%現金回饋!\n參加住宿卷抽獎..等獨家優惠.\n",
-  // connectWalletDesc: "gonna 兌換咖啡，\n活動已於8/5結束! \n\n更多的優惠活動將持續推出...",
+  connectWalletDesc: "",
   connectWalletDesc_asiayo: "", //😋️😋️😋️AsiaYo 特色旅宿\n\n 海內外特色旅宿/主題民宿 \n無上限最高6.5%現金回饋 (註.1)\n#包棟 #秘境 #好友出遊
   discordDesc: "\n\n追蹤最新活動消息，\n請加入 Metalion Discord ",
   // travelshowDesc: "Metalion Lodging Pass \n（宙獅大旅社）", //"宙獅計劃Metalion，\n搶先註冊！",
