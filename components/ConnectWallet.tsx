@@ -98,15 +98,35 @@ export default function ConnectWallet() {
       >
         {i18n.subtitle}   
         
-        <VStack
+        
+        
+        
+            
+        
+        
+          
+          
+      </chakra.span>  
+      
+      <VStack
           maxWidth={{ base: "full", lg: "md" }}
           alignItems={{ base: "left", lg: "center" }}
           flex="1"
           spacing={10}
         >
+          <Heading
+            whiteSpace={{ base: "pre-wrap" }}
+            fontSize={{ base: "2xl", lg: "3xl" }}
+          >
+            {i18n.connectWalletDesc}
+          </Heading>
           
-          
-          
+          <Heading
+            whiteSpace={{ base: "pre-wrap" }}
+            fontSize={{ base: "3xl", lg: "4xl" }}
+          >
+            {i18n.newPromotion}
+          </Heading>
           
           <Box>
             {isAuth ? (
@@ -177,14 +197,6 @@ export default function ConnectWallet() {
             </NextLink>
           </Box>
         </VStack>
-        
-        
-            
-        
-        
-          
-          
-      </chakra.span>  
       
       
       
