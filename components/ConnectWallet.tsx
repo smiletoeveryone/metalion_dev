@@ -28,7 +28,7 @@ const ZH = {
   //redeemTitle: "連接錢包查看活動 🎉\n加入 Discord 抽獎慶祝 🎁",
   //hero2Title: "宙獅元宇宙開台慶\n6/6 活動正式開跑",
   //cta2Ttile: "加入Discord 一同狂歡 🎉",
-  // checkRedeemBtn: "甜點兌換查詢",
+  checkRedeemBtn: "",
   // connectWalletTitle_asiayo: "😍️😍️😍️ click here for visiting AsiaYo! 💝️💝️💝️",
   pleaseSignTitle: "錢包連結成功，請於錢包進行簽署完成登入",
   loginSuccessfulTitle: "登入成功",
