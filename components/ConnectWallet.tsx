@@ -7,13 +7,14 @@ import {
   Flex,
   Button,
   Stack,
-  VStack,
+  VStack,  
 } from "@chakra-ui/react";
 import NextLink from "next/link";
-
-//import { MdOutlineAccountBalanceWallet } from "react-icons/md";
+import { MdOutlineAccountBalanceWallet } from "react-icons/md";
 import { useAuthContext } from "../context/AuthContext";
 import { FaDiscord, FaPhoneAlt } from "react-icons/fa";
+
+
 
 const ZH = {
   heroTitle: "Metalion Lodging Pass 宙獅大旅社 🎉",
@@ -32,13 +33,13 @@ const ZH = {
   pleaseSignTitle: "錢包連結成功，請於錢包進行簽署完成登入",
   loginSuccessfulTitle: "登入成功",
   // btns text
-  connectWalletTitle: "連接錢包",
+  connectWalletTitle: "驗證身份, 啓用訂房",
   joinDiscordTitle: "加入 Discord",
   qubicVisitorTitle: "領取 NFT", // "Metalion X Qubic",
   //signWalletTitle: "簽署綁定",
   //enterPortalTitle: "前往兌換中心",
   enterPortalTitle_asiayo: "AsiaYo 訂房", //😍️😍️😍️ 按這裏訪問Asia Yo取得您的專屬折扣❗️ 💝️💝️💝️
-  checkRedeemBtn_qubic: "登入/註冊 Qubic 錢包❗️❗️❗️", 
+  //checkRedeemBtn_qubic: "登入/註冊 Qubic 錢包❗️❗️❗️", 
   noteDesc:"註:\n\n1. 宙獅大旅社NFT訂房使用期限為2023/12/31止.住房需於2024/12/31前入住完畢.\n2. 需透過宙獅大旅社網頁專屬連結至訂房網站. (重要)\n3. 入住完成後30天內於宙獅Discord提供收款帳號即可獲得現金回饋",
   connectWalletDesc_asiayo_empty:"",
   metalion_lodging:"Metalion Lodging Pass\n宙獅大旅社",
@@ -48,7 +49,7 @@ const ZH = {
 };
 
 export default function ConnectWallet() {
-  const { isAuth } = useAuthContext();
+  const { isAuth, connect } = useAuthContext();
 
   const i18n = ZH;
 
@@ -97,35 +98,107 @@ export default function ConnectWallet() {
       >
         {i18n.subtitle}   
         
+        <VStack
+          maxWidth={{ base: "full", lg: "md" }}
+          alignItems={{ base: "left", lg: "center" }}
+          flex="1"
+          spacing={10}
+        >
+          <Heading
+            whiteSpace={{ base: "pre-wrap" }}
+            fontSize={{ base: "2xl", lg: "3xl" }}
+          >
+            {i18n.connectWalletDesc}
+          </Heading>
+          
+          <Heading
+            whiteSpace={{ base: "pre-wrap" }}
+            fontSize={{ base: "3xl", lg: "4xl" }}
+          >
+            {i18n.newPromotion}
+          </Heading>
+          
+          <Box>
+            {isAuth ? (
+              <NextLink passHref href="/tokens">
+                <Button
+                  w="full"
+                  display="inline-flex"
+                  alignItems="center"
+                  justifyContent="center"
+                  py={6}
+                  border="solid transparent"
+                  fontWeight="bold"
+                  rounded="lg"
+                  color={"white"}
+                  bg={""}
+                  _hover={{
+                    bg: "",
+                  }}
+                >
+                  {i18n.enterPortalTitle}
+                </Button>
+              </NextLink>
+            ) : (
+              <Button
+                w={{ base: "440px" }}
+                leftIcon={<MdOutlineAccountBalanceWallet />}
+                fontSize={{ base: "24px",lg: "24px" }}
+                alignItems="center"
+                left="190px"
+                justifyContent="center"
+                py={6}
+                border="solid transparent"
+                fontWeight="bold"
+                rounded="lg"
+                color="white"
+                bg={"black"}
+                _hover={{
+                  bg: "black",
+                }}
+                // TODO Check connect type
+                onClick={connect as () => Promise<void>}
+              >
+                驗證身份, 啓用訂房
+              </Button>
+            )}
+            
+
+            <NextLink passHref href=""> 
+              <Button
+              
+                mt={5}
+                w={{ base: "full" }}
+                display="inline-flex"
+                alignItems="center"
+                justifyContent="center"
+                py={6}
+                border="solid transparent"
+                fontWeight="bold"
+                rounded="lg"
+                color={"gray.600"}
+                bg={""}
+                colorScheme=""
+                
+                
+              >
+                {i18n.checkRedeemBtn}
+              </Button>
+            </NextLink>
+          </Box>
+        </VStack>
+        
+        
             
         
-        {<Button
-            mt={5}
-            w={{ base: "100" }}
-            //leftIcon={< />}
-            // w="full"
-            as={"a"}
-            target="_blank"
-            // href="/tokens"
-            // href="https://discord.gg/Muj6gwSX"
-            rel="noreferrer"
-            alignItems="center"
-            justifyContent="center"
-            fontSize={{ base: "24px",lg: "24px" }}
-            py={6}
-            border="solid transparent"
-            fontWeight="bold"
-            rounded="lg"
-            color="white"
-            bg="black"
-            _hover={{
-              bg: "black",
-            }}
-          >
+        
           
-            {i18n.auth_noteTitle}
-          </Button>}
+          
       </chakra.span>  
+      
+      
+      
+      
       
       
               
