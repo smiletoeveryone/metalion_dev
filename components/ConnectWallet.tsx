@@ -346,9 +346,9 @@ export default function ConnectWallet() {
               )}
               
               <Heading
-            mt={-10}
+            mt={-9}
             whiteSpace={{ base: "pre-wrap" }}
-            fontSize={{ base: "2xl", lg: "20px" }}
+            fontSize={{ base: "2xl", lg: "24px" }}
           >
           
             {i18n.discordDesc}
