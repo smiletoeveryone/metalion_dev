@@ -19,7 +19,7 @@ import { FaDiscord, FaPhoneAlt } from "react-icons/fa";
 const ZH = {
   heroTitle: "Metalion Lodging Pass 宙獅大旅社 🎉",
   subtitle:
-    "持有者享有海內外訂房5%現金回饋, 金額無上限!\n加碼專屬抽獎, 獨家優惠, 等着你來!!\n",
+    "持有者享有海內外訂房5%現金回饋，金額無上限！\n加碼專屬抽獎，獨家優惠，等着你來！！\n",
   connectWalletDesc: "",
   connectWalletDesc_asiayo: "", //😋️😋️😋️AsiaYo 特色旅宿\n\n 海內外特色旅宿/主題民宿 \n無上限最高6.5%現金回饋 (註.1)\n#包棟 #秘境 #好友出遊
   discordDesc: "\n\n追蹤最新活動消息，\n請加入 Metalion Discord ",
@@ -33,7 +33,7 @@ const ZH = {
   pleaseSignTitle: "錢包連結成功，請於錢包進行簽署完成登入",
   loginSuccessfulTitle: "登入成功",
   // btns text
-  connectWalletTitle: "驗證身份, 啓用訂房",
+  connectWalletTitle: "驗證身份，啓用訂房",
   connectWalletTitle_connected: "錢包已連結",
   joinDiscordTitle: "加入 Discord",
   qubicVisitorTitle: "領取 NFT", // "Metalion X Qubic",
