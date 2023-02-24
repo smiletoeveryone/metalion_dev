@@ -34,8 +34,7 @@ export const useTokens = () => {
 
   const getTokensData = async () => {
     const data = await fetch(
-      `${BASE_URI}/tokens?id=${METALION_EVENT_ADDRESS}&w=${address}`,
-      //{`${BASE_URI}/tokens?id='000'}`
+      `${BASE_URI}/tokens?id=${METALION_EVENT_ADDRESS}&w=${address}`,      
         method: "GET",
         headers: {
           "Content-Type": "application/json",
