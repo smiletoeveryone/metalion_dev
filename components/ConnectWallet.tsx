@@ -22,7 +22,7 @@ const ZH = {
     "持有者享有海內外訂房5%現金回饋，金額無上限！\n加碼專屬抽獎，獨家優惠，等着你來！！\n\n（Beta 公測中）\n",
   connectWalletDesc: "",
   connectWalletDesc_asiayo: "", //😋️😋️😋️AsiaYo 特色旅宿\n\n 海內外特色旅宿/主題民宿 \n無上限最高6.5%現金回饋 (註.1)\n#包棟 #秘境 #好友出遊
-  discordDesc: "\n\n追蹤最新活動消息，\n請加入 Metalion Discord ",
+  discordDesc: "\n\n追蹤最新活動消息，\n請加入 Metalion Discord\n\n\n ",
   // travelshowDesc: "Metalion Lodging Pass \n（宙獅大旅社）", //"宙獅計劃Metalion，\n搶先註冊！",
   // travelshowDesc: "😋️😋️😋️宙獅精選飯店\n\n海內外精選星級飯店\n無上限最高6.5%現金回饋 (註.1)\n即時房源，即訂即住.👍️👍️👍️", //"宙獅計劃Metalion，\n搶先註冊！",
   //redeemTitle: "連接錢包查看活動 🎉\n加入 Discord 抽獎慶祝 🎁",
@@ -346,6 +346,7 @@ export default function ConnectWallet() {
               )}
               
               <Heading
+            mt={-10}
             whiteSpace={{ base: "pre-wrap" }}
             fontSize={{ base: "2xl", lg: "20px" }}
           >
@@ -354,7 +355,7 @@ export default function ConnectWallet() {
           </Heading>
           
           <Button
-            mt={5}
+            mt={-4}
             w={{ base: "80" }}
             leftIcon={<FaDiscord />}
             // w="full"
@@ -482,6 +483,7 @@ export default function ConnectWallet() {
           
           
           <Heading
+            mt={-10}
             whiteSpace={{ base: "pre-wrap" }}
             fontSize={{ base: "20x", lg: "20px" }}
           >
@@ -489,7 +491,7 @@ export default function ConnectWallet() {
           </Heading>
           <Button
             w={{ base: "80" }}
-            mt={15}
+            mt={-4}
             // leftIcon={<FaDiscord />}
             // w="full"
             as={"a"}
