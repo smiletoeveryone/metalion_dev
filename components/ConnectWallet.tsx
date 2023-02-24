@@ -346,7 +346,7 @@ export default function ConnectWallet() {
               )}
               
               <Heading
-            mt={-11}
+            mt={-8}
             whiteSpace={{ base: "pre-wrap" }}
             fontSize={{ base: "2xl", lg: "24px" }}
           >
