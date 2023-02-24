@@ -355,7 +355,7 @@ export default function ConnectWallet() {
           </Heading>
           
           <Button
-            mt={-8}
+            mt={-12}
             w={{ base: "80" }}
             leftIcon={<FaDiscord />}
             // w="full"
