@@ -1,6 +1,6 @@
 import useSWR from "swr";
 import { getPortalsApiURI } from "../constants/api";
-import { METALION_EVENT_ADDRESS } from "../constants/contracts";
+//import { METALION_EVENT_ADDRESS } from "../constants/contracts";
 import { useAuthContext } from "../context/AuthContext";
 
 class StatusError extends Error {
