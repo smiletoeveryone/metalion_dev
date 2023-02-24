@@ -28,7 +28,7 @@ export type Token = {
 export type Tokens = Token[];
 
 export const useTokens = () => {
-  const { address } = useAuthContext();
+  //const { address } = useAuthContext();
 
   const BASE_URI = getPortalsApiURI(process.env.NEXT_PUBLIC_NETWORK_TYPE || "");
 
