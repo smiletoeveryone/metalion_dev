@@ -485,7 +485,7 @@ export default function ConnectWallet() {
           <Heading
             mt={-10}
             whiteSpace={{ base: "pre-wrap" }}
-            fontSize={{ base: "20x", lg: "20px" }}
+            fontSize={{ base: "24x", lg: "24px" }}
           >
             {i18n.metalion_lodging}
           </Heading>
