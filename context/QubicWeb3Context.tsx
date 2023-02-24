@@ -15,7 +15,7 @@ const qubicConnector = new QubicConnector({
   apiKey: process.env.key as string,
   apiSecret: process.env.secret as string,
   chainId: 8981,
-  //infuraProjectId: process.env.NEXT_PUBLIC_INFURA_ID as string,
+  infuraProjectId: process.env.NEXT_PUBLIC_INFURA_ID as string,
   // optional, default: false, when value is true, the popup will hide automatically
   autoHideWelcome: true,
   // optional, default: false, when value is true, the show iframe instead of new window, credit card payment will failed with this option value true
