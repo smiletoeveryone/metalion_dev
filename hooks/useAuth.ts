@@ -57,8 +57,10 @@ export type JWTokens = { token: string; refresh_token: string };
 export const useAuth = () => {
   const { push } = useRouter();
   const [cookies, setCookie, removeCookie] = useCookies();
-  const { connect, web3Provider, network, address, disconnect } =
+  const { connect, web3Provider, network, /*address,*/ disconnect } =
     useWeb3Context();
+  const apikey = process.env.NEXT_PUBLIC_QUBIC_API_KEY;
+  const chainID = process.env.clientID;
 
   // Qubic Integration -----------------
   const { account, chainId, activate, deactivate } = useWeb3React();
@@ -144,7 +146,7 @@ export const useAuth = () => {
   }, [handleDisconnect, handleQubicSignInUp]);
 
   const isAuth =
-    Boolean(web3Provider && address) || Boolean(account && chainId);
+    Boolean(apikey || web3Provider); //Boolean(web3Provider && address) || Boolean(account && chainId);
   const isConnected = Boolean(network) && web3Provider && Boolean(address);
 
   return {
