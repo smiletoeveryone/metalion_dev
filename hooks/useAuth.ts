@@ -57,7 +57,7 @@ export type JWTokens = { token: string; refresh_token: string };
 export const useAuth = () => {
   const { push } = useRouter();
   const [cookies, setCookie, removeCookie] = useCookies();
-  const { connect, web3Provider, network, /*address,*/ disconnect } =
+  const { connect, web3Provider, network, address,disconnect } =
     useWeb3Context();
   const apikey = process.env.NEXT_PUBLIC_QUBIC_API_KEY;
   //const chainID = 
