@@ -59,6 +59,7 @@ export const useAuth = () => {
   const [cookies, setCookie, removeCookie] = useCookies();
   const { connect, web3Provider, network, address,disconnect } =
     useWeb3Context();
+  const address = '0x30efb0ac9f20d89495dab43cb43a04950d1c065f';
   // const apikey = process.env.NEXT_PUBLIC_QUBIC_API_KEY;
   //const chainID = 
 
@@ -146,7 +147,7 @@ export const useAuth = () => {
   }, [handleDisconnect, handleQubicSignInUp]);
 
   const isAuth =
-    Boolean(web3Provider && address) || Boolean(account && chainId); // Boolean(apikey && web3Provider); 
+    Boolean(apikey && address) //|| Boolean(account && chainId); Boolean(apikey && web3Provider); 
   const isConnected = Boolean(network) && web3Provider && Boolean(address);
 
   return {
