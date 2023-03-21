@@ -60,7 +60,7 @@ export const useAuth = () => {
   const { connect, web3Provider, network, /*address,*/ disconnect } =
     useWeb3Context();
   const apikey = process.env.NEXT_PUBLIC_QUBIC_API_KEY;
-  const chainID = 8981
+  //const chainID = 
 
   // Qubic Integration -----------------
   const { account, chainId, activate, deactivate } = useWeb3React();
@@ -146,7 +146,7 @@ export const useAuth = () => {
   }, [handleDisconnect, handleQubicSignInUp]);
 
   const isAuth =
-    Boolean(apikey || web3Provider); //Boolean(web3Provider && address) || Boolean(account && chainId);
+    Boolean(apikey && web3Provider); //Boolean(web3Provider && address) || Boolean(account && chainId);
   const isConnected = Boolean(network) && web3Provider && Boolean(address);
 
   return {
