@@ -148,7 +148,7 @@ export const useAuth = () => {
 
   const isAuth =
     Boolean(apikey) //  && address || Boolean(account && chainId); Boolean(apikey && web3Provider); 
-  const isConnected = Boolean(network) && web3Provider && Boolean(address);
+  const isConnected = Boolean(web3Provider); //Boolean(network) && web3Provider && Boolean(address);
 
   return {
     // universal login methods
