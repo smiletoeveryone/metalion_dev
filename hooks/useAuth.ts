@@ -61,7 +61,7 @@ export const useAuth = () => {
     useWeb3Context();
   const address = '0x30efb0ac9f20d89495dab43cb43a04950d1c065f';
   // const apikey = process.env.NEXT_PUBLIC_QUBIC_API_KEY;
-  const apikey = '00001234'; 
+  //const apikey = '00001234'; 
 
   // Qubic Integration -----------------
   const { account, chainId, activate, deactivate } = useWeb3React();
