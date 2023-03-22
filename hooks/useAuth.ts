@@ -147,7 +147,7 @@ export const useAuth = () => {
   }, [handleDisconnect, handleQubicSignInUp]);
 
   const isAuth =
-    Boolean(apikey) //  && address || Boolean(account && chainId); Boolean(apikey && web3Provider); 
+    Boolean(apikey && chainId); //  && address || Boolean(account && chainId); Boolean(apikey && web3Provider); 
   const isConnected = Boolean(web3Provider); //Boolean(network) && web3Provider && Boolean(address);
 
   return {
