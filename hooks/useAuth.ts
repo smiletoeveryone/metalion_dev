@@ -9,7 +9,7 @@ import { useWeb3React } from "@web3-react/core";
 import { QubicConnector } from "@qubic-js/react";
 
 import { isMainnet } from "../constants/mintday";
-
+/*
 const rightChainId = isMainnet ? Network.POLYGON : Network.MUMBAI;
 const rightParams = isMainnet
   ? [
@@ -38,6 +38,9 @@ const rightParams = isMainnet
         blockExplorerUrls: ["https://polygonscan.com/"],
       },
     ];
+    */
+
+/*
 
 const qubicConnector = new QubicConnector({
   apiKey: process.env.NEXT_PUBLIC_QUBIC_API_KEY as string,
@@ -51,6 +54,7 @@ const qubicConnector = new QubicConnector({
   // optional, default is `https://wallet.qubic.app/`
   walletUrl: "https://wallet.qubic.app/",
 });
+*/
 
 export type JWTokens = { token: string; refresh_token: string };
 
