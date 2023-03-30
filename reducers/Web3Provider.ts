@@ -16,6 +16,7 @@ export const web3InitialState: Web3ProviderState = {
   provider: null,
   web3Provider: null,
   address: null,
+  contractAddress: null,
   network: null,
   connect: null,
   disconnect: null,
