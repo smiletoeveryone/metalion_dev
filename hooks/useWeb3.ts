@@ -38,7 +38,7 @@ if (typeof window !== "undefined") {
 
 export const useWeb3 = (): Web3ProviderState => {
   const [state, dispatch] = useReducer(web3Reducer, web3InitialState);
-  const { isLoading, provider, web3Provider,  /*address,*/ contractAddress, network } = state;
+  const { isLoading, provider, web3Provider,  /*address,contractAddress,*/ network } = state;
   const contractAddress = 0x30EfB0ac9f20d89495DAb43cB43a04950d1c065f;
   const [cookies, , removeCookies] = useCookies();
   const { cache } = useSWRConfig();
