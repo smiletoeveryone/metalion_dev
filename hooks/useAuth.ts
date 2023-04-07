@@ -63,7 +63,7 @@ export const useAuth = () => {
   const [cookies, setCookie, removeCookie] = useCookies();
   const { connect, web3Provider, network, /*address, contractAddress,*/ disconnect } =
     useWeb3Context();
-  const {address = 0x30efb0ac9f20d89495dab43cb43a04950d1c065f} = useweb3Context();
+  const {contractAddress = 0x30efb0ac9f20d89495dab43cb43a04950d1c065f} = useweb3Context();
   // const apikey = process.env.NEXT_PUBLIC_QUBIC_API_KEY;
   //const apikey = '00001234'; 
 
@@ -170,7 +170,7 @@ export const useAuth = () => {
     chainId,
 
     // Info on user
-    address: address || account,
+    address: contractAddress || account,
     isAuth,
     isConnected,
     isWrongNetwork,
