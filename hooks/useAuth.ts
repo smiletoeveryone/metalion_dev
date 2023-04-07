@@ -4,7 +4,7 @@ import { useWeb3Context } from "../context/Web3Context";
 import { useRouter } from "next/router";
 
 // Qubic
-//import { Network } from "@qubic-js/core";
+import { Network } from "@qubic-js/core";
 import { useWeb3React } from "@web3-react/core";
 //import { QubicConnector } from "@qubic-js/react";
 
@@ -61,9 +61,9 @@ export type JWTokens = { token: string; refresh_token: string };
 export const useAuth = () => {
   const { push } = useRouter();
   const [cookies, setCookie, removeCookie] = useCookies();
-  const { connect, web3Provider, network, /*address, contractAddress,*/ disconnect } =
+  const { connect, web3Provider, network, address, /*contractAddress,*/ disconnect } =
     useWeb3Context();
-  const {contractAddress = 0x30efb0ac9f20d89495dab43cb43a04950d1c065f} = useWeb3Context();
+  //const {contractAddress = 0x30efb0ac9f20d89495dab43cb43a04950d1c065f} = useWeb3Context();
   // const apikey = process.env.NEXT_PUBLIC_QUBIC_API_KEY;
   //const apikey = '00001234'; 
 
@@ -151,8 +151,8 @@ export const useAuth = () => {
   }, [handleDisconnect, handleQubicSignInUp]);
 
   const isAuth =
-    Boolean(contractAddress); //  && address || Boolean(account && chainId); Boolean(apikey && web3Provider); 
-  const isConnected = Boolean(contractAddress); //Boolean(network) && web3Provider && Boolean(address);
+    Boolean(address); //  && contractAddress || Boolean(account && chainId); Boolean(apikey && web3Provider); 
+  const isConnected = Boolean(address); //Boolean(network) && web3Provider && Boolean(address);
 
   return {
     // universal login methods
@@ -170,7 +170,7 @@ export const useAuth = () => {
     chainId,
 
     // Info on user
-    address: contractAddress || account,
+    address: address || account,
     isAuth,
     isConnected,
     isWrongNetwork,
