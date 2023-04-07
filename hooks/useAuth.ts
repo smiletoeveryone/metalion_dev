@@ -6,7 +6,7 @@ import { useRouter } from "next/router";
 // Qubic
 //import { Network } from "@qubic-js/core";
 import { useWeb3React } from "@web3-react/core";
-import { QubicConnector } from "@qubic-js/react";
+//import { QubicConnector } from "@qubic-js/react";
 
 import { isMainnet } from "../constants/mintday";
 /*
