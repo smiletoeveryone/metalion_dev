@@ -8,7 +8,7 @@ import { useRouter } from "next/router";
 import { useWeb3React } from "@web3-react/core";
 //import { QubicConnector } from "@qubic-js/react";
 
-import { isMainnet } from "../constants/mintday";
+//import { isMainnet } from "../constants/mintday";
 /*
 const rightChainId = isMainnet ? Network.POLYGON : Network.MUMBAI;
 const rightParams = isMainnet
