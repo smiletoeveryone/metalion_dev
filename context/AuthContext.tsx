@@ -20,7 +20,7 @@ type AuthProviderState = {
   account: string | null | undefined;
   chainId: number | undefined;
 
-  address: string | null | undefined;
+  contractAddress: string | null | undefined;
   isConnected: boolean | null | undefined;
   isWrongNetwork: boolean | undefined;
   isAuth: boolean | undefined;
