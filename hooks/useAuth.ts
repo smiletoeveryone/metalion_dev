@@ -4,7 +4,7 @@ import { useWeb3Context } from "../context/Web3Context";
 import { useRouter } from "next/router";
 
 // Qubic
-import { Network } from "@qubic-js/core";
+//import { Network } from "@qubic-js/core";
 import { useWeb3React } from "@web3-react/core";
 //import { QubicConnector } from "@qubic-js/react";
 
