@@ -4,12 +4,12 @@ import { useWeb3Context } from "../context/Web3Context";
 import { useRouter } from "next/router";
 
 // Qubic
-//import { Network } from "@qubic-js/core";
+import { Network } from "@qubic-js/core";
 import { useWeb3React } from "@web3-react/core";
-//import { QubicConnector } from "@qubic-js/react";
+import { QubicConnector } from "@qubic-js/react";
 
-//import { isMainnet } from "../constants/mintday";
-/*
+import { isMainnet } from "../constants/mintday";
+
 const rightChainId = isMainnet ? Network.POLYGON : Network.MUMBAI;
 const rightParams = isMainnet
   ? [
@@ -37,12 +37,40 @@ const rightParams = isMainnet
         },
         blockExplorerUrls: ["https://polygonscan.com/"],
       },
+    ]
+   ;[
+      {
+        chainId: "5",
+        rpcUrls: ["https://goerli.infura.io/v3/"],
+        chainName: "Goerli test network",
+        nativeCurrency: {
+          name: "GoerliETH",
+          symbol: "GoerliETH",
+          decimals: 18,
+        },
+        blockExplorerUrls: ["https://goerli.etherscan.io"],
+      },
     ];
-    */
+    [
+      {
+        chainId: "80001",
+        rpcUrls: ["https://rpc-mumbai.maticvigil.com/"],
+        chainName: "Mumbai Testnet",
+        nativeCurrency: {
+          name: "MATIC",
+          symbol: "MATIC",
+          decimals: 18,
+        },
+        blockExplorerUrls: ["https://polygonscan.com/"],
+      },
+    ];
+    
+    
+    
 
-/*
 
 const qubicConnector = new QubicConnector({
+  
   apiKey: process.env.NEXT_PUBLIC_QUBIC_API_KEY as string,
   apiSecret: process.env.NEXT_PUBLIC_QUBIC_API_SECRET as string,
   chainId: rightChainId,
@@ -54,18 +82,14 @@ const qubicConnector = new QubicConnector({
   // optional, default is `https://wallet.qubic.app/`
   walletUrl: "https://wallet.qubic.app/",
 });
-*/
 
 export type JWTokens = { token: string; refresh_token: string };
 
 export const useAuth = () => {
   const { push } = useRouter();
   const [cookies, setCookie, removeCookie] = useCookies();
-  const { connect, web3Provider, network, address, /*contractAddress,*/ disconnect } =
+  const { connect, web3Provider, network, address, disconnect } =
     useWeb3Context();
-  //const {contractAddress = 0x30efb0ac9f20d89495dab43cb43a04950d1c065f} = useWeb3Context();
-  // const apikey = process.env.NEXT_PUBLIC_QUBIC_API_KEY;
-  //const apikey = '00001234'; 
 
   // Qubic Integration -----------------
   const { account, chainId, activate, deactivate } = useWeb3React();
@@ -151,8 +175,8 @@ export const useAuth = () => {
   }, [handleDisconnect, handleQubicSignInUp]);
 
   const isAuth =
-    Boolean(address); //  && contractAddress || Boolean(account && chainId); Boolean(apikey && web3Provider); 
-  const isConnected = Boolean(address); //Boolean(network) && web3Provider && Boolean(address);
+    Boolean(web3Provider && address) || Boolean(account && chainId);
+  const isConnected = Boolean(network) && web3Provider && Boolean(address);
 
   return {
     // universal login methods
