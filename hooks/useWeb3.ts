@@ -21,6 +21,7 @@ const providerOptions = {
       rpc: {
         137: "https://polygon-rpc.com",
         80001: "https://matic-mumbai.chainstacklabs.com",
+        8981:"wallet.prod.qubics.org",
       },
     },
   },
@@ -32,14 +33,13 @@ if (typeof window !== "undefined") {
     // network: process.env.NEXT_PUBLIC_NETWORK_ID, // optional
     cacheProvider: true,
     providerOptions, // required
-    theme: "dark",
+    theme: "light",
   });
 }
 
 export const useWeb3 = (): Web3ProviderState => {
   const [state, dispatch] = useReducer(web3Reducer, web3InitialState);
-  const { isLoading, provider, web3Provider,  /*address,contractAddress,*/ network } = state;
-  const contractAddress = 0x30EfB0ac9f20d89495DAb43cB43a04950d1c065f;
+  const { isLoading, provider, web3Provider, address, network } = state;
   const [cookies, , removeCookies] = useCookies();
   const { cache } = useSWRConfig();
   const toast = useToast();
@@ -246,8 +246,7 @@ export const useWeb3 = (): Web3ProviderState => {
     isLoading,
     provider,
     web3Provider,
-    //address,
-    contractAddress,
+    address,
     network,
     connect,
     disconnect,
